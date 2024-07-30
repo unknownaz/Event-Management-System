@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(48, 46, 46);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+h1 {
+    text-align: center;
+    color: #ebebeb;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+label {
+    margin-bottom: 10px;
+    color: #ebebeb;
+}
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    padding: 10px;
+    color: #ebebeb;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #4cae4c;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid #ccc;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+}
+a {
+    color: black;
+}
+#attendee-list {
+    background-color: #f4f4f4;
+}
+footer {
+    color: #ebebeb;
+}
