@@ -4,39 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Creation</title>
-    <link rel="stylesheet" href="../css/style1.css">
+    <link href="../src/output.css" rel="stylesheet">
 </head>
-<body>
-    <a href="../html/index.html" target="_main">Go back to the main page</a>
+<body class="bg-gray-800 text-gray-200">
+    <a href="../html/index.html" target="_main" class="text-black hover:underline p-4 block">Go back to the main page</a>
     <header></header>
-    <h1>Event Creation</h1>
-    </header>
-    <hr>
+    <h1 class="text-4xl text-center mt-4">Event Creation</h1>
+    <hr class="my-4">
         
     <main>
-        <div class="container">
-        <h2>Create a New Event</h2>
-        <form action="../html/create-event" method="POST" id="eventCreationForm">
-                <label for="eventName">Event Name:</label>
-                <input type="text" id="eventName" name="eventName" required>
-            <br>
-                <label for="eventDate">Event Date:</label>
-                <input type="date" id="eventDate" name="eventDate" required>
-            <br>
-                <label for="eventTime">Event Time:</label>
-                <input type="time" id="eventTime" name="eventTime" required>
-            <br>
-                <label for="eventLocation">Event Location:</label>
-                <input type="text" id="eventLocation" name="eventLocation" required>
-            <br>
-                <label for="eventDescription">Event Description:</label>
-                <textarea id="eventDescription" name="eventDescription" rows="5" required></textarea>
-            <br>
-                <button type="button" onclick="location.href='../html/completionCreation.html'">Create Event</button>
-        </form>
-    </div>
+        <div class="container max-w-2xl mx-auto p-6 bg-gray-900 shadow-lg rounded-lg">
+            <h2 class="text-2xl text-center mb-4">Create a New Event</h2>
+            <form action="../html/create-event" method="POST" id="eventCreationForm" class="space-y-4">
+                <div>
+                    <label for="eventName" class="block mb-2">Event Name:</label>
+                    <input type="text" id="eventName" name="eventName" required class="w-full p-2 border border-gray-700 rounded bg-gray-800 text-gray-200">
+                </div>
+                <div>
+                    <label for="eventDate" class="block mb-2">Event Date:</label>
+                    <input type="date" id="eventDate" name="eventDate" required class="w-full p-2 border border-gray-700 rounded bg-gray-800 text-gray-200">
+                </div>
+                <div>
+                    <label for="eventTime" class="block mb-2">Event Time:</label>
+                    <input type="time" id="eventTime" name="eventTime" required class="w-full p-2 border border-gray-700 rounded bg-gray-800 text-gray-200">
+                </div>
+                <div>
+                    <label for="eventLocation" class="block mb-2">Event Location:</label>
+                    <input type="text" id="eventLocation" name="eventLocation" required class="w-full p-2 border border-gray-700 rounded bg-gray-800 text-gray-200">
+                </div>
+                <div>
+                    <label for="eventDescription" class="block mb-2">Event Description:</label>
+                    <textarea id="eventDescription" name="eventDescription" rows="5" required class="w-full p-2 border border-gray-700 rounded bg-gray-800 text-gray-200"></textarea>
+                </div>
+                <button type="button" onclick="location.href='../html/completionCreation.html'" class="w-full py-2 bg-green-600 hover:bg-green-700 rounded text-white">Create Event</button>
+            </form>
+        </div>
     </main>
-    <footer>
+    <footer class="text-center py-4 mt-8 bg-gray-900">
         <p>&copy; 2024 EventWizards. All rights reserved.</p>
     </footer>
 </body>

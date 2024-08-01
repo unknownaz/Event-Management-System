@@ -4,41 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attendee Management</title>
-    <link rel="stylesheet" href="../css/style3.css">
+    <link href="../src/output.css" rel="stylesheet">
 </head>
-<body>
-    <a href="../html/index.html" target="_main">Go back to the main page</a>
-    <div class="container">
-        <h1>Attendee Management</h1>
-        <form id="attendee-form" onsubmit="addAttendee(event)">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="contact">Contact:</label>
-            <input type="text" id="contact" name="contact" required>
- 
-            <button type="submit">Add Attendee</button>
+<body class="bg-gray-800 text-gray-200">
+    <a href="../html/index.html" target="_main" class="text-black hover:underline p-4 block">Go back to the main page</a>
+    <div class="container max-w-2xl mx-auto p-6 bg-gray-900 shadow-lg rounded-lg">
+        <h1 class="text-3xl text-center mb-6">Attendee Management</h1>
+        <form id="attendee-form" onsubmit="addAttendee(event)" class="space-y-4">
+            <div>
+                <label for="name" class="block mb-2">Full Name:</label>
+                <input type="text" id="name" name="name" required class="w-full p-2 border border-gray-700 rounded bg-gray-800 text-gray-200">
+            </div>
+            <div>
+                <label for="email" class="block mb-2">Email Address:</label>
+                <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-700 rounded bg-gray-800 text-gray-200">
+            </div>
+            <div>
+                <label for="contact" class="block mb-2">Contact:</label>
+                <input type="text" id="contact" name="contact" required class="w-full p-2 border border-gray-700 rounded bg-gray-800 text-gray-200">
+            </div>
+            <button type="submit" class="w-full py-2 bg-green-600 hover:bg-green-700 rounded text-white">Add Attendee</button>
         </form>
-        <table>
+        <table class="w-full border-collapse mt-8">
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Contact</th>
+                    <th class="p-2 border border-gray-700 bg-gray-700 text-gray-200">#</th>
+                    <th class="p-2 border border-gray-700 bg-gray-700 text-gray-200">Name</th>
+                    <th class="p-2 border border-gray-700 bg-gray-700 text-gray-200">Email</th>
+                    <th class="p-2 border border-gray-700 bg-gray-700 text-gray-200">Contact</th>
                 </tr>
             </thead>
-            <tbody id="attendee-list">
+            <tbody id="attendee-list" class="bg-gray-800">
                 <!-- Attendees will be displayed here -->
             </tbody>
         </table>
     </div>
-    <footer>
+    <footer class="text-center py-4 mt-8 bg-gray-900">
         <p>&copy; 2024 EventWizards. All rights reserved.</p>
     </footer>
+    <script src="../js/script1.js"></script>
 </body>
-<script src="../js/script1.js"></script>
 </html>
