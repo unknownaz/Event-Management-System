@@ -12,7 +12,7 @@ function addAttendee(event) {
         email: emailInput.value,
         contact: contactInput.value
     };
-
+ 
     attendees.push(attendee);
     nameInput.value = '';
     emailInput.value = '';
