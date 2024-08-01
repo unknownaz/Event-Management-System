@@ -10,70 +10,64 @@
     <link rel="stylesheet" href="../css/style.css">
     <link href="../src/output.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-      <h1 class="text-4xl font-bold mb-4">EventWizards - An Event Management System</h1>
-      <p class="text-lg mb-8">Your one-stop solution for managing and attending events effortlessly</p>
-        <div class="links">
-            <a href="../html/eventCreation.html" target="_main">
+<body class="bg-cover bg-center bg-fixed text-white" style="background-image: url('../Images/Background_Image.jpg');">
+    <div class="container flex flex-col items-center justify-center h-screen px-4 bg-black bg-opacity-50">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">EventWizards - An Event Management System</h1>
+        <p class="text-lg sm:text-xl md:text-2xl mb-8">Your one-stop solution for managing and attending events effortlessly</p>
+        <div class="links flex flex-wrap justify-center gap-4">
+            <a href="../html/eventCreation.html" target="_main" class="flex items-center gap-2 p-4 bg-white bg-opacity-20 hover:bg-opacity-50 rounded-full text-lg transition transform hover:scale-105">
                 <i class="fas fa-calendar-plus"></i> Event Creation
             </a>
-            <a href="../html/ticketBooking.html" target="_main">
+            <a href="../html/ticketBooking.html" target="_main" class="flex items-center gap-2 p-4 bg-white bg-opacity-20 hover:bg-opacity-50 rounded-full text-lg transition transform hover:scale-105">
                 <i class="fas fa-ticket-alt"></i> Ticket Booking
             </a>
-            <a href="../html/attendeeManagement.html" target="_main">
+            <a href="../html/attendeeManagement.html" target="_main" class="flex items-center gap-2 p-4 bg-white bg-opacity-20 hover:bg-opacity-50 rounded-full text-lg transition transform hover:scale-105">
                 <i class="fas fa-users"></i> Attendee Management
             </a>
-            <a href="../html/eventCalender.html" target="_main">
+            <a href="../html/eventCalender.html" target="_main" class="flex items-center gap-2 p-4 bg-white bg-opacity-20 hover:bg-opacity-50 rounded-full text-lg transition transform hover:scale-105">
                 <i class="fas fa-calendar-alt"></i> Event Calendar
             </a>
         </div>
     </div>
-    <section class="footer">
-        <div class="box-container">
-          <div class="box">
-            <h3>branches</h3>
-            <a><i class="fas fa-map-marker-alt"></i> Lahore </a>
-            <a><i class="fas fa-map-marker-alt"></i> Karachi </a>
-            <a><i class="fas fa-map-marker-alt"></i> Islamabad </a>
-            <a><i class="fas fa-map-marker-alt"></i> Peshawar </a>
-            <a><i class="fas fa-map-marker-alt"></i> Sheikhupura </a>
-          </div>
-  
-          <div class="box">
-            <h3>quick links</h3>
-            <a href="../html/index.html"> <i class="fas fa-arrow-right"></i> Home </a>
-            <a href="../html/eventCreation.html"> <i class="fas fa-arrow-right"></i> Event Creation </a>
-            <a href="../html/ticketBooking.html"> <i class="fas fa-arrow-right"></i> Ticket Booking </a>
-            <a href="../html/attendeeManagement.html"> <i class="fas fa-arrow-right"></i> Attendee Management </a>
-            <a href="../html/eventCalender.html"> <i class="fas fa-arrow-right"></i> Event Calender </a>
-          </div>
+    <section class="footer bg-black py-10">
+        <div class="box-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div class="box">
+                <h3 class="text-xl font-semibold mb-2">Branches</h3>
+                <a class="block mb-1"><i class="fas fa-map-marker-alt"></i> Lahore</a>
+                <a class="block mb-1"><i class="fas fa-map-marker-alt"></i> Karachi</a>
+                <a class="block mb-1"><i class="fas fa-map-marker-alt"></i> Islamabad</a>
+                <a class="block mb-1"><i class="fas fa-map-marker-alt"></i> Peshawar</a>
+                <a class="block mb-1"><i class="fas fa-map-marker-alt"></i> Sheikhupura</a>
+            </div>
 
-          <div class="box">
-            <h3>contact info</h3>
-            <a><i class="fas fa-phone"></i> 123456789 </a>
-            <a><i class="fas fa-phone"></i> 123456789 </a>
-            <a><i class="fas fa-phone"></i> 123456789 </a>
-            <a><i class="fas fa-envelope"></i> 0XKp6@example.com </a>
-          </div>
+            <div class="box">
+                <h3 class="text-xl font-semibold mb-2">Quick Links</h3>
+                <a href="../html/index.html" class="block mb-1"><i class="fas fa-arrow-right"></i> Home</a>
+                <a href="../html/eventCreation.html" class="block mb-1"><i class="fas fa-arrow-right"></i> Event Creation</a>
+                <a href="../html/ticketBooking.html" class="block mb-1"><i class="fas fa-arrow-right"></i> Ticket Booking</a>
+                <a href="../html/attendeeManagement.html" class="block mb-1"><i class="fas fa-arrow-right"></i> Attendee Management</a>
+                <a href="../html/eventCalender.html" class="block mb-1"><i class="fas fa-arrow-right"></i> Event Calendar</a>
+            </div>
 
-          <div class="box">
-            <h3 class="text-xl font-semibold mb-2">Follow Us</h3>
-            <a href="https://www.facebook.com" target="_blank" class="block mb-1">
-                <i class="fab fa-facebook-f"></i> Facebook
-            </a>
-            <a href="https://twitter.com" target="_blank" class="block mb-1">
-                <i class="fab fa-twitter"></i> Twitter
-            </a>
-            <a href="https://www.instagram.com" target="_blank" class="block mb-1">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" class="block mb-1">
-                <i class="fab fa-linkedin-in"></i> LinkedIn
-            </a>
+            <div class="box">
+                <h3 class="text-xl font-semibold mb-2">Contact Info</h3>
+                <a class="block mb-1"><i class="fas fa-phone"></i> 123456789</a>
+                <a class="block mb-1"><i class="fas fa-phone"></i> 123456789</a>
+                <a class="block mb-1"><i class="fas fa-phone"></i> 123456789</a>
+                <a class="block mb-1"><i class="fas fa-envelope"></i> 0XKp6@example.com</a>
+            </div>
+
+            <div class="box">
+                <h3 class="text-xl font-semibold mb-2">Follow Us</h3>
+                <a href="https://www.facebook.com" target="_blank" class="block mb-1"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://twitter.com" target="_blank" class="block mb-1"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://www.instagram.com" target="_blank" class="block mb-1"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com" target="_blank" class="block mb-1"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </div>
         </div>
-        
-        </section>
-    <footer>&copy; 2024 EventWizards. All rights reserved.</footer>
+    </section>
+    <footer class="text-center bg-black py-4">
+        &copy; 2024 EventWizards. All rights reserved.
+    </footer>
 </body>
 </html>
