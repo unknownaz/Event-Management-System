@@ -51,34 +51,4 @@ Ensure to replace the placeholder href values in the HTML file with your actual 
 <a href="https://www.instagram.com/your-profile" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
 <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
 
-FOLDER STRUCTURE:
-Here is an overview of the project's folder structure:
-
-Event-Management-System/
-├── css/
-│   ├── style.css
-│   └── style1.css
-├   └── style2.css
-│   └── style3.css
-│   └── style4.css
-├── js/
-│   ├── script.js
-│   └── script1.js
-├── src/
-│   ├── input.css
-│   ├── output.css
-├── html/
-│   ├── index.html
-│   └── eventCreation.html
-│   └── eventCalender.html
-│   └── ticketBooking.html
-│   └── attendeeManagement.html
-│   └── completionCreation.html
-├── images/
-│   └── Background Image.jpg
-├── favicon.ico
-├── node_modules/
-├── tailwind.config.js
-├── package.json
-├── package-lock.json
 
