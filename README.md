@@ -44,11 +44,5 @@ To get a local copy up and running, follow these steps:
 USAGE:
 To start the project, open the index.html file in your web browser. This project does not currently require a server to run.
 
-SOCIAL MEDIA LINKS:
-Ensure to replace the placeholder href values in the HTML file with your actual social media profile URLs:
-<a href="https://www.facebook.com/your-profile" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
-<a href="https://twitter.com/your-profile" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-<a href="https://www.instagram.com/your-profile" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-<a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
 
 
