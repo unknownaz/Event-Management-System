@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="../css/style2.css"></style>
+</head>
+<body>
+    <a href="../html/index.html" target="_main">Go back to the main page</a>
+    <div class="container">
+        <h1>Book Your Tickets</h1>
+        <form action="/submit-booking" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="event">Select Event:</label>
+            <select id="event" name="event" onchange="updatePrice()" required>
+                <option value="cultural_festival">Cultural Festival - PKR 5000</option>
+                <option value="concert">Concert - PKR 8000</option>
+                <option value="conference">Conference - PKR 15000</option>
+                <option value="seminar">Seminar - PKR 12000</option>
+            </select>
+            
+            <label for="tickets">Number of Tickets:</label>
+            <input type="number" id="tickets" name="tickets" min="1" max="100" onchange="updatePrice()" required>
+            
+            <button type="button" onclick="location.href='../html/bookingCompletion.html'">Book Now</button>
+        </form>
+        <div class="total-price" id="total-price">Total Price: PKR 0.00</div>
+    </div>
+    <footer>
+        <p>&copy; 2024 EventWizards. All rights reserved.</p>
+    </footer>
+</body>
+<script src="../js/script.js"></script>
+</html>
