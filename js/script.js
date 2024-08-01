@@ -12,7 +12,6 @@ function updatePrice() {
 
     const event = eventSelect.value;
     const tickets = ticketsInput.value;
- 
     const totalPrice = eventPrices[event] * tickets;
     totalPriceElement.textContent = `Total Price: PKR ${totalPrice.toFixed(2)}`;
 }
